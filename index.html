@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/main.css">
+  <title>Template Repo</title>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <div class="site-header__info">
+        <a class="site-header__link" href="./index.html">
+          <img class="site-logo" src="./images/logo.svg" alt="Site logo">
+        </a>
+        <nav class="site-nav">
+          <ul class="site-nav__list">
+            <li class="site-nav__item">
+              <a class="site-nav__link site-nav__link--activ" href="#">
+                Services
+              </a>
+            </li>
+            <li class="site-nav__item">
+              <a class="site-nav__link" href="#">
+                Portfolio
+              </a>
+            </li>
+            <li class="site-nav__item">
+              <a class="site-nav__link" href="#">
+                About us
+              </a>
+            </li>
+          </ul>
+          <span class="site-nav__lang">
+            <a class="site-nav__lang-link" href="#">Uz</a>
+            <a class="site-nav__lang-link" href="#">Ru</a>
+            <a class="site-nav__lang-link site-nav__lang-link--activ" href="">En</a>
+          </span>
+        </nav>
+
+        <div class="topnav">
+          <a href="#home" class="active">L</a>
+          <div id="myLinks">
+            <a href="#news"> Services</a>
+            <a href="#contact">Portfolio</a>
+            <a href="#about">About us</a>
+          </div>
+          <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+          </a>
+        </div>
+        
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section>
+      <div class="container">
+        <div class="hero">
+          <div class="hero-left">
+            <form action="https://echo.htmlacademy.ru/" class="site-form" method="post" autocomplete="off">
+              <div class="form__info">
+                <label for="name">
+                  Ism Familiya
+                </label>
+                <input type="text" id="name" name="name" placeholder="Ismingizni kiriting" required>
+  
+              </div>
+              
+              <div class="form__info">
+                <label for="Companiya">
+                  Companiyani kiriting
+                </label>
+                <input type="text" id="Companiya" name="Companiya" placeholder="Companiya" required>
+  
+              </div>
+
+              <div class="form__info">
+                <label for="tg">
+                  Telegram username
+                </label>
+                <input type="text" id="tg" name="Telegram username" placeholder="Username" required>
+  
+              </div>
+
+              <div class="form__info">
+                <label for="phone">
+                  Phone number
+                </label>
+                <input type="text" id="phone" name="phone num" required value="+998 99">
+  
+              </div>
+
+              <div class="form__info">
+                <label for="sayt">
+                  Sayni turini tanlang
+                </label>
+                <select id="sayt">
+                  <option value="1">
+                    Corparative sayt
+                  </option>
+                  <option value="2">
+  2
+                  </option>
+                  <option value="3">
+  3
+                  </option>
+                </select>
+              </div>
+
+              <div class="form__info">
+                <label for="pochta">
+                  Sizga bog'lanish usulini tanlang
+                </label>
+                <select id="pochta">
+                  <option value="1">
+                    Telegram
+                  </option>
+                  <option value="2">
+  2
+                  </option>
+                  <option value="3">
+  3
+                  </option>
+                </select>
+              </div>
+
+              <div class="form__info">
+                <label for="text">
+                  Message
+                </label>
+                <textarea name="Message" id="text" cols="30" rows="10">
+  
+                </textarea>
+  
+              </div>
+
+              <button type="submit" class="form__btn">
+                Jo'natish  <img src="./images/right.svg" alt="vector right">
+              </button>
+            </form>
+          </div>
+
+
+  
+          <div class="hero-right">
+            <h2 class="hero-right__title">
+              Ux & Ui design
+            </h2>
+            <p class="hero-right__text">
+              In the current tech scenario, one can't predict what device their user will use to interact with a product. This is why it's always a good idea to build something that supports all devices. However it is nearly impossible to design for every screen size with so many .
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+
+
+
+  <script>
+    function myFunction() {
+  var x = document.getElementById("myLinks");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}
+  </script>
+</body>
+</html>
